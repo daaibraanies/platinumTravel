@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using PlatinumTravel.Models;
 
 namespace PlatinumTravel
 {
@@ -16,6 +18,7 @@ namespace PlatinumTravel
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer<PlatinumDBContext>(null);
         }
     }
 }

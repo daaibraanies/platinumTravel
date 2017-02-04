@@ -1,0 +1,108 @@
+2017-02-05 00:00:25.6123 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:00:52.9971 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:00:57.1258 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при попытке доступа к бд. Значение не может быть неопределенным.
+Имя параметра: source
+2017-02-05 00:06:31.7140 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:08:04.2386 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:08:17.3004 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при попытке доступа к бд. Значение не может быть неопределенным.
+Имя параметра: source
+2017-02-05 00:08:47.6817 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:09:24.4841 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:09:44.7510 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:09:51.4273 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при попытке доступа к бд. Значение не может быть неопределенным.
+Имя параметра: source
+2017-02-05 00:10:17.8325 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:11:07.3443 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:11:23.1342 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 00:11:25.3224 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при создании куки. Значение не может быть равно NULL или быть пустым.
+Имя параметра: url
+2017-02-05 00:13:15.9847 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:13:23.9777 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin                пакинул панель одминистирования.
+2017-02-05 00:13:27.7008 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь  пакинул панель одминистирования.
+2017-02-05 00:13:41.4801 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:14:24.7743 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:14:26.6439 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 00:14:28.4829 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при создании куки. Значение не может быть равно NULL или быть пустым.
+Имя параметра: url
+2017-02-05 00:14:30.8330 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 00:16:29.6934 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:16:41.1635 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 00:16:42.5497 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при создании куки. Значение не может быть равно NULL или быть пустым.
+Имя параметра: url
+2017-02-05 00:21:02.0969 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:21:06.1550 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:21:11.5274 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin                пакинул панель одминистирования.
+2017-02-05 00:22:01.7066 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:22:09.0179 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:22:45.4326 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 00:22:50.3163 | WARN | PlatinumTravel.Controllers.AccountController | Исключение при создании куки. Значение не может быть равно NULL или быть пустым.
+Имя параметра: url
+2017-02-05 00:24:08.9746 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 00:24:18.7082 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin пакинул панель одминистирования.
+2017-02-05 00:24:28.5358 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 00:24:31.6627 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:01:12.7738 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:01:27.9506 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin пакинул панель одминистирования.
+2017-02-05 01:01:36.3602 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:01:37.5548 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:01:43.3579 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin пакинул панель одминистирования.
+2017-02-05 01:01:48.3022 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asdh,dfdf
+2017-02-05 01:01:52.5185 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asdh,dwedew
+2017-02-05 01:02:30.7139 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:03:10.3450 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asdfsd,sdfs
+2017-02-05 01:03:13.6795 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:03:13.6795 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:03:21.0308 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin пакинул панель одминистирования.
+2017-02-05 01:07:41.1806 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:07:41.4022 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:08:09.0933 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin пакинул панель одминистирования.
+2017-02-05 01:08:14.5931 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asd,dfd
+2017-02-05 01:09:05.7241 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:09:19.6528 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: fdsfds,fsdf
+2017-02-05 01:09:26.6003 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: fdsfds,fsdf
+2017-02-05 01:09:30.1106 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: fdsfdsrtgg,fsdfyjyujyu
+2017-02-05 01:10:33.2828 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:10:51.2717 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:55.9898 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:56.5340 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:56.6894 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:56.8379 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:56.9989 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfd,dsvgif
+2017-02-05 01:10:58.8836 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: asfdfrefref,dsvgif
+2017-02-05 01:11:22.0493 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:11:28.1419 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: dfdsf,sdf
+2017-02-05 01:12:03.2082 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:15:21.5734 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:15:29.0951 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:15:31.0930 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:17:00.4635 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:17:11.2296 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:17:20.1022 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:18:41.2239 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:18:48.9947 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:18:51.7586 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:20:01.5140 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.
+2017-02-05 01:20:08.4287 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:25:53.1661 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:26:07.2980 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:26:10.8509 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:56:31.2289 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 01:57:01.4193 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:57:04.5260 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 01:58:08.7886 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 01:58:20.7537 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 02:00:03.2464 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 02:00:12.3649 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 02:00:14.4234 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 02:07:58.3038 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 02:08:29.5746 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.
+2017-02-05 02:08:43.9979 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 02:08:50.4395 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 02:21:34.2587 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 02:21:45.5936 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 02:21:50.4532 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 02:23:53.7552 | INFO | PlatinumTravel.Controllers.HomeController | log test
+2017-02-05 02:24:08.1811 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.
+2017-02-05 02:24:09.9668 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь  покинул панель одминистирования.
+2017-02-05 02:24:15.7075 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 02:24:15.9181 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NLog;
+using PlatinumTravel.Filters;
 
 namespace PlatinumTravel.Controllers
 {
@@ -16,6 +17,7 @@ namespace PlatinumTravel.Controllers
             return View();
         }
 
+        [Authentificate]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
