@@ -1,0 +1,3 @@
+2017-02-04 18:12:48.5224 |  | PlatinumTravel.Controllers.HomeController | log test
+2017-02-04 18:13:46.2738 |  | DBLogger | db logger test
+2017-02-04 18:15:07.9295 | INFO | PlatinumTravel.Controllers.HomeController | log test
