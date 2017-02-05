@@ -26,6 +26,13 @@ namespace PlatinumTravel
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/AdminScripts").Include(
+                        "~/Scripts/AdminPageScript.js"));
+
+            bundles.Add(new StyleBundle("~/Content/AdminPageCss").Include(
+                "~/Content/AdminStyle/AdminStyle.css",
+                "~/Content/AdminStyle/bootstrap.full.css"));
         }
     }
 }

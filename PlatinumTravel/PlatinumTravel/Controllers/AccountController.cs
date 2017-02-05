@@ -46,8 +46,7 @@ namespace PlatinumTravel.Controllers
                 {
                     using(PlatinumDBContext db = PlatinumDBContext.GetConnection())
                     {
-                        connectingUser = db.Profiles.FirstOrDefault(x=>x.UserName == model.UserName);
-                        
+                        connectingUser = db.Profiles.FirstOrDefault(x=>x.UserName == model.UserName); 
                     }
                 }
                 catch(Exception e)
