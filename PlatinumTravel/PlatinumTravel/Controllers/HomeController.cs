@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NLog;
+using PlatinumTravel.Models;
 using PlatinumTravel.Filters;
 
 namespace PlatinumTravel.Controllers
@@ -13,7 +14,6 @@ namespace PlatinumTravel.Controllers
         Logger generalLogger = LogManager.GetCurrentClassLogger();
         public ActionResult Index()
         {
-            generalLogger.Info("log test");
             return View();
         }
 

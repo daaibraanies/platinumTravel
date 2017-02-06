@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity.Infrastructure;
 using System.Data.Entity;
 using NLog;
 
@@ -15,11 +16,19 @@ namespace PlatinumTravel.Models
     {
         //DB Fields
         public DbSet<Profile> Profiles { get; set; }   //TODO реализовать сеттер
-
+        public DbSet<SlideModel> Slides { get; set; }
 
 
 
         //DB Fields
+
+        public class MigrationsContextFactory : IDbContextFactory<PlatinumDBContext>
+        {
+            public PlatinumDBContext Create()
+            {
+                return new PlatinumDBContext(1,"s");
+            }
+        }
 
         //Соединение по умолчанию
         //Права только на СЕЛEКТ
@@ -28,6 +37,8 @@ namespace PlatinumTravel.Models
         //Соединение авторизированного пользователя
         //Расширенные права
         private PlatinumDBContext(string Role) : base(Role + "Connection") { }
+
+        private PlatinumDBContext(int i, string sd) : base("root") { }
 
         public static PlatinumDBContext GetConnection()
         {

@@ -177,3 +177,33 @@
 #user-list-table th,#user-list-table td{
     text-align:center;
 }
+#log-report-wrapper{
+    height:390px;
+        overflow-y:scroll;
+}
+
+#log-report-containe{
+    width:inherit;
+}
+
+.log-string-wrapper{
+    border-bottom:1px solid rgba(0, 0, 0, 0.68);
+}
+.log-string-warn{
+    width:100%;
+    height:100%;
+    background-color:rgba(255, 242, 0,0.5);
+}
+.log-string-fatal{
+    background-color:rgba(255, 0, 0,0.5);
+}
+
+
+#slides-menu{
+    margin-top:20px;
+    overflow-x:scroll;
+}
+
+.slide-option{
+    margin-top:5px;
+}

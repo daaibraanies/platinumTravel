@@ -1,0 +1,40 @@
+﻿@model IEnumerable <PlatinumTravel.Models.SlideModel>
+@{
+    ViewBag.Title = "Slider";
+}
+
+<h2>Слайдер</h2>
+<div id="slider-preview" class="row" style="height:300px;background-color:antiquewhite">
+
+</div>
+
+<div class="row" id="slides-menu">
+    @foreach(var slide in Model)
+    {
+        <div class="col-md-2">
+            <img src="@slide.getSrc()" class="img-responsive"  height="200px"/>
+            <div class="col-md-2 slide-options form-horizontal">
+                <form action="~/Manage/EditSlide" method="post">
+                    <div class="form-group">
+                            <div class="col-md-2">
+                                <input name="Id" type="hidden" value="@slide.Id" />
+                                <input name="imgName" type="text" value="@slide.imgName" />
+                                <input name="mainText" type="text" value="@slide.mainText" />
+                                <input name="secondaryText" type="text" value="@slide.secondaryText" />
+                                <input name="isActive" type="checkbox" checked="@slide.isActive" />
+                             </div>
+                        </div>
+                        <input type="submit" value="Изменить" />
+                </form>
+                <form action="~/Manage/DeleteSlide/@slide.Id">
+                    <input type="submit" value="Удалить" />
+                </form>
+            </div>
+        </div>
+    }
+</div>
+<div class="row">
+    <form action="~/Manage/AddSlide">
+        <input type="submit" value="Добавить слайд" class="btn btn-default" />
+    </form>
+</div>

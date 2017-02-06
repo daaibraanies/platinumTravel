@@ -132,3 +132,5 @@ D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\bin\ru\System.Web.W
 D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\obj\Debug\PlatinumTravel.csprojResolveAssemblyReference.cache
 D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\obj\Debug\PlatinumTravel.dll
 D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\obj\Debug\PlatinumTravel.pdb
+D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\obj\Debug\PlatinumTravel.Migrations.Initial.resources
+D:\Work Dir\Git\platinumTravel\PlatinumTravel\PlatinumTravel\obj\Debug\PlatinumTravel.csproj.GenerateResource.Cache

@@ -356,3 +356,8 @@
 2017-02-05 21:39:50.2324 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
 2017-02-05 21:39:52.0491 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
 2017-02-05 21:39:52.9636 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.
+2017-02-05 21:42:48.3742 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+2017-02-05 21:42:48.6460 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+2017-02-05 21:43:01.1637 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+2017-02-05 21:43:10.2768 | INFO | PlatinumTravel.Controllers.ManageController | Запрос на изменение данных пользователя ид: 1. Кто:Admin
+2017-02-05 21:43:13.1176 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.

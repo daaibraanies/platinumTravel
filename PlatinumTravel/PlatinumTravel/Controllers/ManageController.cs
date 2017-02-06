@@ -6,7 +6,8 @@ using System.Web.Mvc;
 using PlatinumTravel.Models;
 using PlatinumTravel.Filters;
 using NLog;
-using PlatinumTravel.Models;
+using System.IO;
+
 
 namespace PlatinumTravel.Controllers
 {
@@ -25,7 +26,11 @@ namespace PlatinumTravel.Controllers
         // GET: Manage
         public ActionResult Index()
         {
-            return View();
+            using (StreamReader logReader = new StreamReader(HttpContext.Server.MapPath("~/logs/Test-Log-2017-02-06.log"),System.Text.Encoding.Default))
+            {
+               logReport logreport = new logReport(logReader.ReadToEnd());
+               return View(logreport);
+            }
         }
 
         //TODO ПРОВЕРКИ
@@ -218,6 +223,112 @@ namespace PlatinumTravel.Controllers
             }
             return RedirectToAction("ShowUsers");                           //Подумать куда можно перенаправить и как выводить ошибки. Мб создать страницу общую для ошибок.
             
+        }
+
+        [HttpGet]
+        public ActionResult Slider()
+        {
+            IEnumerable<SlideModel> slides;
+            try
+            {
+                PlatinumDBContext db = PlatinumDBContext.GetConnection();
+                slides = db.Slides;
+                return View(slides);
+            }
+            catch(Exception e)
+            {
+                testLog.Fatal("Ошибка выборки слайдов из бд " + e.Message);
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult AddSlide()
+        {
+            return View();
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddSlide(UploadSlideModel slide)
+        {
+            Slider newSlide = new Slider();
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    newSlide.UploadSliderImg(slide);
+                    return RedirectToAction("Slider");
+                }
+                catch(Exception e)
+                {
+                    testLog.Warn("Исключение при загрузке изображения слайдера. " + e.Message);
+                    return RedirectToAction("Index");
+                }
+            }
+            ModelState.AddModelError("", "Неверно заполнена форма");
+            return View(slide);
+        }
+
+
+        [HttpGet]
+        public ActionResult DeleteSlide(int? Id)
+        {
+            SlideModel slideToDelete = new SlideModel();
+            if (Id.HasValue)
+            {
+                testLog.Info("Попытка удаления слайда. Кто:" + HttpContext.User.Identity.Name);
+
+                try
+                {
+                    using (PlatinumDBContext db = PlatinumDBContext.GetConnection())
+                    {
+                        slideToDelete = db.Slides.Find(Id);
+                        db.Slides.Attach(slideToDelete);
+                        db.Slides.Remove(slideToDelete);
+                        db.SaveChanges();
+                    }
+                    return RedirectToAction("Slider");
+                }
+                catch (Exception e)
+                {
+                    testLog.Warn("Исключение при попытке удаления слайда. " + e.Message);
+                }
+            }
+            return RedirectToAction("Slider");                           //Подумать куда можно перенаправить и как выводить ошибки. Мб создать страницу общую для ошибок.
+        }
+
+
+        [HttpPost]
+        public ActionResult EditSlide(SlideModel editedSlide)                           //ЧЕК БОКС НЕ ИЗМЕНЯЕТСЯ
+        {
+            if (editedSlide != null)
+            {
+                try
+                {
+                    using(PlatinumDBContext db = PlatinumDBContext.GetConnection())
+                    {
+                        SlideModel storedSlide = db.Slides.Find(editedSlide.Id);
+                        storedSlide.mainText = editedSlide.mainText;
+                        storedSlide.secondaryText = editedSlide.secondaryText;                  
+                        storedSlide.isActive = editedSlide.isActive;                                //Изменять имя файла на сервере
+                        db.Entry(storedSlide).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                    return RedirectToAction("Slider");                                          
+                }
+                catch(Exception e)
+                {
+                    testLog.Warn("Ошибка при изменении данных слайда " + e.Message);
+                    return RedirectToAction("Index");                                                       //изменить место перенаправления
+                }
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
     }
 }
