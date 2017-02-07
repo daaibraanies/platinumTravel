@@ -1,24 +1,274 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿* 
+{
+    padding:0;
+    margin:0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body{
+        background-color:#f5eded;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+/*========HEADER============*/
+
+
+#site-header
+{
+    background-color:#261242;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+#site-navigation-wrapper
+{
+    margin:0;   
+    height:190px;
+}
+
+#navigation-silver-string
+{
+    height:2px;
+    margin:0px;
+    /*background-image:url("../Images/silver-string.png");*/
+    background-color:white;
+}
+
+#site-navigation
+{
+    height:140px;
+}
+
+#site-navigation-left-block,#site-navigation-central-block,#site-navigation-right-block
+{
+    margin:0;
+    height:140px;
+}
+
+#site-navigation-left-block > img
+{
+}
+
+#site-navigation-central-block #site-header-citata
+{
+        color:white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:large;
+}
+
+#site-navigation-central-block > div.container
+{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+#citata-author
+{ 
+    color:#a7a5a5;
+    float:right;
+}
+
+#site-navigation-right-block > div.container
+{
+    align-content:center;
+    margin:60px 0;
+    height:auto;
+    color:#a7a5a5;
+    font-size:large;
+}
+
+#site-navigation-right-block > div > span
+{
+    color:#a7a5a5;
+    font-size:large;
+}
+
+#site-navigation-right-block > div a
+{
+    color: white;
+    font-size:large;
+}
+
+#site-navigation-menu
+{
+    height:49px;
+}
+
+#site-navigation-menu > div.container
+{
+   width:auto;
+   height:100%;
+}
+#site-navigation-menu > div.container > ul
+{
+    width:100%;
+    justify-content:center;
+}
+
+#site-navigation-menu > div.container > ul > div.container li
+{
+    color:#a7a5a5;
+    font-size:medium;
+    margin-left:15px;
+    font-weight:500;
+    height:49px;
+    padding:10px;
+    width:150px;
+    float:left;
+    text-align:center;
+}
+#site-navigation-menu > div.container > ul > div.container li:hover
+{
+    color:white;
+    font-weight:550;
+}
+
+
+#quick-search-wrapper
+{
+    height:65px;
+    position: relative;
+    bottom:-360px;
+    z-index:11;
+}
+
+#quick-search-wrapper > div.container
+{
+    width:100%;
+    bottom:350px;
+}
+
+#quick-search-form
+{
+    width:700px;
+    padding:0;
+    margin:2px auto;
+    height:68px;
+    border:3px solid rgba(0, 0, 0, 0.41);
+}
+
+
+#quick-search-icon
+{
+    height:62px;
+    width:62px;
+    margin:0;
+    float:left;
+    background-color:white;
+    background-image:url("../Images/search-inactive.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:55px;
+}
+
+#quick-search-icon:hover{
+        background-image:url("../Images/search-active.png");
+}
+
+#quick-search-input
+{
+    height:62px;
+    width:532px;
+    font-size:medium;
+    line-height: 30px;
+    border:none;
+    margin:0;
+    float:left;
+}
+
+#quick-search-button
+{
+    height:62px;
+    margin:0;
+    border:none;
+    width:100px;
+    float:left;
+}
+
+/*========HEADER============*/
+
+/*=======SLIDER============*/
+#site-slider-container
+{
+    height:400px;
+}
+
+
+.site-slider-wrapper
+{
+    height:400px;
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    position:absolute;
+}
+
+div#site-slider-container .site-slider-wrapper > img
+{
+    position:absolute;
+}
+
+#slider-bg-container{
+    height:400px;
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:7;
+}
+
+div#site-slider-container .site-slider-wrapper h1.slider-text, #slider-bg-container h1.slider-text
+{
+    color:white;
+    width:100%;
+    max-width:700px;
+    text-align:center;
+    margin:10% auto;
+    position:relative;
+}
+
+#slider-bg-img{
+     position:absolute;
+}
+
+#slide1{
+    z-index: 10;
+    -webkit-animation: slider1 21s linear 7s infinite normal
+}
+@-webkit-keyframes slider1{
+0%{opacity:1}
+5%{opacity:0}
+85%{opacity:0}
+95%{opacity:1}
+}
+
+#slide2{
+    z-index: 9;
+    -webkit-animation: slider2 21s linear 14s infinite normal
+}
+@-webkit-keyframes slider2{
+0%{opacity:1}
+5%{opacity:0}
+85%{opacity:0}
+95%{opacity:1}
+}
+
+#slide3{
+    z-index: 8;
+    -webkit-animation: slider3 21s linear 21s infinite normal
+}
+@-webkit-keyframes slider3{
+0%{opacity:1}
+5%{opacity:0}
+85%{opacity:0}
+95%{opacity:1}
+}
+
+
+/*=======SLIDER============*/
+
+
+/*=======MIDDLEBAR============*/
+
+#site-middlebar-wrapper
+{
+    height:250px;
+    margin:0;
+    background-color:white;
 }

@@ -163,6 +163,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ToursController.cs" />
     <Compile Include="Filters\Authentification.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -236,9 +237,15 @@
     <Content Include="Views\Manage\AddUser.cshtml" />
     <Content Include="Views\Manage\AddSlide.cshtml" />
     <Content Include="Views\Manage\Slider.cshtml" />
+    <Content Include="Views\Shared\_SiteLayout.cshtml" />
+    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_SliderPartial.cshtml" />
+    <Content Include="Views\Shared\_MiddleBarPartial.cshtml" />
+    <Content Include="Views\Tours\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Files\Images\Slider\" />
+    <Folder Include="Images\" />
     <Folder Include="Slider\" />
     <Folder Include="Views\AccountModels\" />
   </ItemGroup>
