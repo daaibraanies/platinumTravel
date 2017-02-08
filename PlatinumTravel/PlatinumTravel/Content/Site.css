@@ -1,4 +1,4 @@
-﻿* 
+﻿div,* 
 {
     padding:0;
     margin:0;
@@ -13,7 +13,8 @@ body{
 
 #site-header
 {
-    background-color:#261242;
+   /* background-color:#261242;*/
+    background: linear-gradient(to top, #261242,#2D154F);
 }
 
 #site-navigation-wrapper
@@ -117,8 +118,11 @@ body{
 {
     color:white;
     font-weight:550;
+    cursor:pointer;
 }
 
+
+/*======QUICK SEARCH=========*/
 
 #quick-search-wrapper
 {
@@ -136,18 +140,19 @@ body{
 
 #quick-search-form
 {
-    width:700px;
+    width:900px;
     padding:0;
     margin:2px auto;
-    height:68px;
-    border:3px solid rgba(0, 0, 0, 0.41);
+    height:70px;
+    border:5px solid rgba(0,0,0, 0.5);
+
 }
 
 
 #quick-search-icon
 {
-    height:62px;
-    width:62px;
+    height:60px;
+    width:60px;
     margin:0;
     float:left;
     background-color:white;
@@ -163,27 +168,230 @@ body{
 
 #quick-search-input
 {
-    height:62px;
-    width:532px;
-    font-size:medium;
+    height:60px;
+    width:350px;
+    color:#261242;
+    font-size:22px;
     line-height: 30px;
     border:none;
     margin:0;
     float:left;
 }
 
-#quick-search-button
+#quick-search-input:focus
 {
-    height:62px;
+    outline:none;
+}
+
+#quick-search-calendar-icon
+{
+    height:60px;
+    width:60px;
+    margin:0;
+    float:left;
+    background-color:white;
+    background-image:url("../Images/calendar.svg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:55px;
+}
+
+#quick-search-calendar-icon:hover
+{
+        background-image:url("../Images/calendar-active.png");
+}
+
+#quick-search-date-from,#quick-search-date-to
+{
+    width:130px;
+    float:left;
+    height:60px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    line-height: 30px;
+    color:#261242;
+}
+
+#quick-search-separator
+{
+    height:60px;
+    width:60px;
+    margin:0;
+    float:left;
+    background-color:white;
+    background-image:url("../Images/separator.svg");
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size:20px;
+}
+
+
+
+#quick-search-button-container
+{
+    height:60px;
+    width:100px;
+    float:left;
+    border:none;
+}
+
+#quick-search-bar
+{
+    height:25px;
+    width:2px;
+    background-color:rgba(255, 255, 255, 0.50);
+    position:absolute;
+    margin-left:5px;
+    margin-top:18px;
+}
+
+input#quick-search-button
+{
+    height:60px;
     margin:0;
     border:none;
     width:100px;
+    color:white;
+   font-size:22px;
     float:left;
+    background-color:#5D8C44;
 }
 
-/*========HEADER============*/
+input#quick-search-button:hover{
+      background-color:#82C45F;
+}
 
+ /*=======QUICK SEARCH========*/
+ /*=======CALENDAR==========*/
+  
+@import "compass/css3";
+
+header#calendar-header {
+  text-align:center;
+  color: white;
+  font: 15px Calibri Light, sans-serif;
+  cursor: default;
+  margin-left: auto;
+  margin-right: auto;
+  animation:fade 1s ease both;
+  border-radius:5px;
+  background-color: #5D8C44;
+}
+
+#month {
+  width: 200px;
+  display: inline-block;
+  transition: 0.3s;
+
+}
+
+#calendar-header #back-month {
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#back-month:hover {color: #4ba2fa;}
+
+#calendar-header #forward-month { 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#forward-month:hover {color: #4ba2fa;}
+
+.dayofweek {
+  float: left;
+  font: 30px Calibri Light, sans-serif;
+  line-height: 22px;
+  cursor: default;
+  color:white;
+  background-color:#4ba2fa;
+}
+
+#calendar {
+  width: 294px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#calendar-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  animation:fade 0.5s 0.1s ease both;
+}
+
+#calendar-wrapper li {
+  float: left;
+  border: 1px solid;
+  width: 42px;
+  height: 42px;
+  font: 15px Calibri Light, sans-serif;
+  text-align: center;
+  vertical-align:central;
+  line-height: 22px;
+  cursor: pointer;
+
+}
+#calendar-wrapper li:hover {background: #9cceff;color:azure;font-size:25px;}
+
+#calendar-wrapper .selected {background: $quinary}
+
+#calendar-wrapper .weekend {background: $tertiary;}
+
+#blockthirtytwo {background: #bfbfbf; cursor: default;}
+#blockthirtythree {background: #bfbfbf; cursor: default;}
+#blockthirtyfour {background: #bfbfbf; cursor: default;}
+#blockthirtyfive {background: #bfbfbf; cursor: default;}
+
+#monday{background: $quinary;}
+#tuesday{background: $quinary;}
+#wednesday{background: $quinary;}
+#thursday{background: $quinary;}
+#friday{background: $quinary;}
+#saturday{background: $quinary;}
+#sunday{background: $quinary;}
+
+@keyframes fade {0% {opacity: 0; transform: translateY(-20px);}}
+
+ div#calendar-wrapper
+ {
+     color:white;
+     height:320px;
+     width:294px;
+     background-color:#b0dbff;
+     position:relative;
+     left:605px;
+ }
+
+ div.cal-inactive
+ {
+     display:none;
+ }
+
+ div.cal-active
+ {
+     visibility:visible;
+ }
+
+
+ 
+ /*=======CALENDAR==========*/
+/*========HEADER============*/
 /*=======SLIDER============*/
+
+
 #site-slider-container
 {
     height:400px;
@@ -229,7 +437,7 @@ div#site-slider-container .site-slider-wrapper h1.slider-text, #slider-bg-contai
 
 #slide1{
     z-index: 10;
-    -webkit-animation: slider1 21s linear 7s infinite normal
+    -webkit-animation: slider1 21s linear 7s infinite normal;
 }
 @-webkit-keyframes slider1{
 0%{opacity:1}
@@ -240,7 +448,7 @@ div#site-slider-container .site-slider-wrapper h1.slider-text, #slider-bg-contai
 
 #slide2{
     z-index: 9;
-    -webkit-animation: slider2 21s linear 14s infinite normal
+    -webkit-animation: slider2 21s linear 14s infinite normal;
 }
 @-webkit-keyframes slider2{
 0%{opacity:1}
@@ -251,7 +459,7 @@ div#site-slider-container .site-slider-wrapper h1.slider-text, #slider-bg-contai
 
 #slide3{
     z-index: 8;
-    -webkit-animation: slider3 21s linear 21s infinite normal
+    -webkit-animation: slider3 21s linear 21s infinite normal;
 }
 @-webkit-keyframes slider3{
 0%{opacity:1}
@@ -268,7 +476,157 @@ div#site-slider-container .site-slider-wrapper h1.slider-text, #slider-bg-contai
 
 #site-middlebar-wrapper
 {
-    height:250px;
+    height:100%;
     margin:0;
     background-color:white;
+}
+
+
+div.middlebar-item{
+    height:250px;
+}
+
+div#middlebar-left{
+      border-left: solid 2px;
+    -webkit-border-image:
+        -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(#f5eded))  100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    border-image:
+      linear-gradient(to bottom,rgba(0, 0, 0, 0),#f5eded) 1 100%;
+}
+
+div#middlebar-central{
+    border-left: solid 2px;
+    border-right: solid 2px;
+        -webkit-border-image:
+        -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(#f5eded))  100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    border-image:
+      linear-gradient(to bottom,rgba(0, 0, 0, 0),#f5eded) 1 100%;
+}
+
+div#middlebar-right{
+      border-right: solid 2px;
+     -webkit-border-image:
+        -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(#f5eded))  100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0),#f5eded) 1 100%;
+    border-image:
+      linear-gradient(to bottom,rgba(0, 0, 0, 0),#f5eded) 1 100%;
+}
+
+
+div.middlebar-content{
+    width:100%;
+    margin-top:40px;
+    text-align:center;
+}
+
+div.middlebar-content > h3
+{
+    color:#5D8C44;
+    font-weight:500;
+}
+
+
+/*=======MIDDLEBAR============*/
+
+/*=======FOOTER============*/
+
+footer#site-footer
+{
+    height:420px;
+    background: linear-gradient(to top, #2D154F, #261242);
+}
+
+
+#site-footer > div.row {
+    margin:0;
+    height:300px;
+}
+
+#site-footer div.row > div#footer-centralbar
+{
+    height:300px;
+    background-image:url("../Images/world-map.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:850px 300px;
+}
+
+footer#site-footer #footer-site-map
+{
+    margin:0;
+    height:60px;
+}
+
+footer#site-footer #footer-rights
+{
+    border-top:1px solid rgba(255, 255, 255, 0.5);
+    margin:0;
+    height:40px;
+}
+
+
+footer#site-footer .footer-item-wrapper
+{
+    padding-top:25px;
+    height:300px;
+    float:left;
+    margin:0;
+    text-align:center;
+}
+
+footer#site-footer .footer-item-wrapper>h4
+{
+    color:white;
+    width:70%;
+    margin:5px auto;
+    border-bottom:solid 1px grey;
+}
+
+footer#site-footer .footer-item-wrapper p
+{
+    color:#a7a5a5;
+}
+
+footer#site-footer .footer-item-wrapper p:hover
+{
+    color:white;
+    cursor: pointer;
+}
+
+#footer-rights
+{
+    padding:10px;
+    color:white;
+    line-height:30px;
+    text-align:center;
+}
+
+
+/*=======FOOTER============*/
+
+
+
+
+#shit{
+    margin-top:200px;
+    height:250px;
+    background-color:#261242;
+
 }
