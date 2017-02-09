@@ -4,14 +4,62 @@
     ViewBag.Title = "Platinum Travel";
 }
 
-<div id="site-body-wrapper" class="row" style="height:700px">
-    <div id="shit" class="row">
-        <div id="try-img" class="col-lg-2">
-            <img src="~/Images/geom.png" class="img-responsive" />
+<div id="site-body-wrapper" class="row" style="height:100%;">
+    <div class="container"style="height:100%;">
+        <h2>Горящие туры</h2>
+        <div id="hottours-wrapper" class="row" style="height:100%;">
+            <div class="hottour-container col-lg-4 col-md-4">
+                <img src="../Images/bg1.jpg" class="img-responsive" />
+                <div class="hottour-info col-lg-4 col-md-4">
+                    <span class="info">Заглавие</span>
+                    <span class="price">25 000</span>
+                </div>
+            </div>
+            <div class="hottour-container col-lg-4 col-md-4">
+                <img src="../Images/bg2.jpg" class="img-responsive" />
+                <div class="hottour-info col-lg-4 col-md-4">
+                    <span class="info">Заглавие</span>
+                    <span class="price">25 000</span>
+                </div>
+            </div>
+            <div class="hottour-container col-lg-4 col-md-4">
+                <img src="../Images/bg3.jpg" class="img-responsive" />
+                <div class="hottour-info col-lg-4 col-md-4">
+                    <span class="info">Заглавие</span>
+                    <span class="price">25 000</span>
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+    <div id="site-callback-wrapper" class="row">
+        <div id="callback-leftbar" class="col-lg-2">
+           
         </div>
-        <div class="col-lg-10">
-            <img class="img-responsive" src="~/Images/geom-up.png" />
+        <div id="callback-rightbar" class="col-lg-10">
+            <div id="callback-form-wrapper">
+                <h3>Устали подбирать тур сами?</h3>
+                <h4>оставьте свой номер и мы поможем вам </h4>
+                <form id="callback-form">
+                    <div id="lianizer-top" class="callback-lineanizer">
+                        <label>Как вам можно обращаться</label>
+                        <input type="text" />
+                    </div>
+                    <div id="lianizer-mid" class="callback-lineanizer">
+                        <label>Ваш номер телефона</label>
+                        <input type="text" />
+                    </div>
+                    <div id="lianizer-bot" class="callback-lineanizer">
+                        <input type="submit" />
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
+
+    <div style="height:500px;" class="zaglushka">
+        
     </div>
 </div>
 

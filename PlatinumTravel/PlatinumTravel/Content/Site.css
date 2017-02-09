@@ -258,9 +258,9 @@ input#quick-search-button
     background-color:#5D8C44;
 }
 
-input#quick-search-button:hover{
-      background-color:#82C45F;
-}
+    input#quick-search-button:hover {
+        background-color: #82C45F;
+    }
 
  /*=======QUICK SEARCH========*/
  /*=======CALENDAR==========*/
@@ -549,23 +549,23 @@ div.middlebar-content > h3
 
 footer#site-footer
 {
-    height:420px;
+    height:320px;
     background: linear-gradient(to top, #2D154F, #261242);
 }
 
 
-#site-footer > div.row {
+#site-footer > div#site-footer-wrapper {
     margin:0;
-    height:300px;
+    height:200px;
 }
 
 #site-footer div.row > div#footer-centralbar
 {
-    height:300px;
+    height:200px;
     background-image:url("../Images/world-map.png");
     background-repeat:no-repeat;
     background-position:center;
-    background-size:850px 300px;
+    background-size:500px 190px;
 }
 
 footer#site-footer #footer-site-map
@@ -585,10 +585,15 @@ footer#site-footer #footer-rights
 footer#site-footer .footer-item-wrapper
 {
     padding-top:25px;
-    height:300px;
+    height:200px;
     float:left;
     margin:0;
     text-align:center;
+}
+
+#site-footer-wrapper > div.row
+{
+    height:200px;
 }
 
 footer#site-footer .footer-item-wrapper>h4
@@ -622,11 +627,149 @@ footer#site-footer .footer-item-wrapper p:hover
 /*=======FOOTER============*/
 
 
+/*=======CALLBACK==========*/
 
-
-#shit{
+#site-callback-wrapper{
     margin-top:200px;
     height:250px;
     background-color:#261242;
+}
 
+#site-callback-wrapper div#callback-leftbar
+{
+    background-image:url("../Images/geom.png");
+    background-repeat:no-repeat;
+    height:250px;
+    background-position:left;
+    padding:0;
+    margin:0;
+}
+
+#site-callback-wrapper div#callback-rightbar{
+    background-image:url("../Images/geom-up.png");
+    background-repeat:no-repeat;
+    height:250px;
+    background-position:top right;
+}
+
+#callback-form-wrapper{
+    height:250px;
+    float:right;
+    width:600px;
+    margin-right:380px;
+}
+
+#callback-form-wrapper > h3, #callback-form-wrapper h4{
+    color:white;
+
+}
+
+#callback-form-wrapper > h3{
+    margin-left:35px;
+}
+
+#callback-form-wrapper h4{
+    margin-left:85px;
+}
+
+#callback-form-wrapper .callback-lineanizer
+{
+    width:390px;
+}
+
+#callback-form-wrapper .callback-lineanizer input{
+    height:30px;
+    width:150px;
+    background-color:#f5eded;
+    border :none;
+    outline:none;
+    font-size:medium;
+    border-radius:3px;
+}
+
+#callback-form-wrapper div.callback-lineanizer label
+{
+    height:30px;
+    width:200px;
+    color:white;
+    font-size:13px;
+}
+
+div#lianizer-bot > input[type="submit"]
+{
+    background-color:#5D8C44;
+    color:white;
+}
+div#lianizer-bot > input[type="submit"]:hover
+{
+    background-color: #82C45F;
+}
+
+#callback-form-wrapper div#lianizer-top
+{
+    margin-left:110px;
+}
+#callback-form-wrapper div#lianizer-mid{
+    margin-left:175px;
+}
+#callback-form-wrapper div#lianizer-bot{
+    margin-left:450px;
+}
+
+/*=======CALLBACK==========*/
+#site-body-wrapper div.container > h2
+{
+    color:#261242;
+    text-align:center;
+}
+
+div.hottour-container
+{
+    height:400px;
+    overflow-y:hidden;
+}
+
+
+div.hottour-container img{
+    position:relative;
+}
+
+div.hottour-info
+{
+    opacity:0;
+    height:80px;
+    width:100%;
+    padding:0;
+    background-image:url("../Images/triangle.png");
+    background-size: cover;
+    position:relative;
+    bottom:80px;
+    padding-top:80px;
+    overflow-y:hidden;
+}
+
+div.hottour-info:hover
+{
+    opacity:1;
+    height:60%;
+    bottom:60%;
+}
+
+div.hottour-info > span.info
+{
+    color:white;
+    text-align:center;
+    font-weight:500;
+    font-size:large;
+    display:block;
+    
+}
+
+div.hottour-info > span.price
+{
+    color:white;
+    text-align:center;
+    font-weight:300;
+    font-size:medium;
+    display:block;
 }
