@@ -2,7 +2,22 @@
     Date.prototype.daysInMonth = function () {
         return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
     };
+    
 
+    $("form #quick-search-input").focus(function () {
+        $("form .disp-trig").removeClass("disp-false");
+        $("form .disp-trig").addClass("disp-true");
+        return;
+    });
+
+    $("form#quick-search-form input").blur(function (event) {
+        if ($(event.relatedTarget).hasClass('disp-trig')) return;
+        else
+        {
+            $("form .disp-trig").removeClass("disp-true");
+            $("form .disp-trig").addClass("disp-false");
+        }
+    });
 
     $("#quick-search-date-from").click(function (event) {
         event.stopPropagation();
@@ -67,47 +82,56 @@
         day = day + "." + month + "." + $("#month").attr("cur-year");
         $(".date-here").val(day);
         $(".date-here").removeClass("date-here");
+        $("form .disp-trig").removeClass("disp-false");
+        $("form .disp-trig").addClass("disp-true");
         $("#calendar-wrapper").toggleClass("cal-inactive");
         $("#calendar-wrapper").toggleClass("cal-active");
     });
 
 
-    $('#forward-month').click(function (event) {
+    $('div#forward-month').click(function (event) {
         event.stopPropagation();
-        $("#calendar>ul li.block").removeClass('c-d-inactive');
+        $("form .disp-trig").removeClass("disp-false");
+        $("form .disp-trig").addClass("disp-true");
+        $("div#calendar>ul li.block").removeClass('c-d-inactive');
         move_calendar(1);
     });
 
-    $('#back-month').click(function (event) {
+    $('div#back-month').click(function (event) {
         event.stopPropagation();
-        $("#calendar>ul li.block").removeClass('c-d-inactive');
+        $("form .disp-trig").removeClass("disp-false");
+        $("form .disp-trig").addClass("disp-true");
+        $("div#calendar>ul li.block").removeClass('c-d-inactive');
         move_calendar(-1);
     });
 
 
-    //ЗАПИЛИТЬ ОБРАЩЕНИЕ К ЛИ ЧЕРЕЗ АЙДИШНИКА!!!!Г!Р"
-
     function move_calendar(step)
     {
         var months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-        var curmonth = parseInt($("#month").attr("cur-month"));
-        var curyear = parseInt($("#month").attr("cur-year"));
+        var curmonth = parseInt($("h1#month").attr("cur-month"));
+        var curyear = parseInt($("h1#month").attr("cur-year"));
         var newmonth = curmonth + step;
         
-        if (newmonth < 0) { newmonth = 11; }
-        else if (newmonth > 11) { newmonth = 0; }
+        if (newmonth < 0) { newmonth = 11; curyear--; $("h1#month").attr("cur-year", curyear); }
+        else if (newmonth > 11) { newmonth = 0; curyear++; $("h1#month").attr("cur-year", curyear); }
+
 
         d = new Date(curyear, newmonth);
         var day = 1;
         var days = d.daysInMonth();
-        var firstday = d.getDay() - 1;
+        var firstday =d.getDay()-1;
         var i = 0;
-        delete d;
-        $("#month").text(months[newmonth]);
-        $("#month").attr("cur-month",newmonth);
+
+        if (firstday < 0) firstday = 6;
+        else if (firstday>6) firstday=0;
+
+        $("h1#month").text(months[newmonth]);
+        $("h1#month").attr("cur-month",newmonth);
 
         while(i != firstday)
         {
+            if (i > 35) break;
             var li = "li.c-d-" + i;
             $(li).text("");
             $(li).addClass('c-d-inactive');
@@ -116,21 +140,22 @@
 
         while (day <= days)
         {
+            if (i > 35) break;
             var li = "li.c-d-" + i;
             $(li).removeClass('c-d-inactive');
             $(li).text(day);
             day++;
             i++;
         }
-        while (day > days && day < 35)
+        while (day > days)
         {
+            if (i > 35) break;
             var li = "li.c-d-" +i;
             $(li).addClass('c-d-inactive');
             $(li).text("");
             day++;
             i++;
         }
-     
     }
 
 });

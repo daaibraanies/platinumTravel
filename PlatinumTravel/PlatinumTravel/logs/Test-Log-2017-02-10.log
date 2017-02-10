@@ -1,0 +1,4 @@
+[START] 2017-02-10 22:54:58.0258 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+[START] 2017-02-10 22:55:02.0353 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+[START] 2017-02-10 22:55:13.6618 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-10 22:57:13.5364 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.

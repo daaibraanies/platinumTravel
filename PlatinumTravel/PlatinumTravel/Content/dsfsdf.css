@@ -84,7 +84,6 @@ div#site-navigation-menu >div.row div.in
 
 div#site-navigation-menu >div.row div.in >ul
 {
-
     margin:0 auto;
     width:200px;
 }
@@ -645,21 +644,6 @@ footer#site-footer
     height:200px;
 }
 
-#site-footer div.row > div#footer-leftbar{
-   
-    float:left;
-}
-
-#site-footer div.row > div#footer-rightbar{
-    float:right;
-}
-
-
-#site-footer div#footer-rightbar p{
-    max-width:360px;
-    width:100%;
-       text-align:right;
-}
 #site-footer div.row > div#footer-centralbar
 {
     height:200px;
@@ -689,6 +673,7 @@ footer#site-footer .footer-item-wrapper
     height:200px;
     float:left;
     margin:0;
+    text-align:center;
 }
 
 #site-footer-wrapper > div.row
@@ -699,16 +684,9 @@ footer#site-footer .footer-item-wrapper
 footer#site-footer .footer-item-wrapper>h4
 {
     color:white;
-    width:100%;
+    width:70%;
     margin:5px auto;
     border-bottom:solid 1px grey;
-}
-
-footer#site-footer div#footer-rightbar p{
-    margin:0;
-}
-footer#site-footer div#footer-rightbar>h4{
-    text-align:right;
 }
 
 footer#site-footer .footer-item-wrapper p, footer#site-footer .footer-item-wrapper p a
@@ -720,7 +698,6 @@ footer#site-footer .footer-item-wrapper p, footer#site-footer .footer-item-wrapp
 footer#site-footer .footer-item-wrapper p:hover,footer#site-footer .footer-item-wrapper p:hover a
 {
     color:white;
-    text-decoration:none;
     cursor: pointer;
 }
 
@@ -737,17 +714,11 @@ footer#site-footer .footer-item-wrapper p:hover,footer#site-footer .footer-item-
     padding-left:190px;
 }
 
-#footer-rights span#sign a
-{
-    font-size:80%;
-    padding:0;
-}
 #footer-rights span#sign
 {
     display:block;
     width:9%;
     font-size:70%;
-    padding:0;
     float:right;
 }
 #footer-site-map div.container 
@@ -799,21 +770,17 @@ li#inst-social > a
      background-image:url("../Images/inst-inactive.svg");
 }
 
+li#fb-social > a 
+{
+     background-image:url("../Images/fb-inactive.svg");
+}
+
 
 li#inst-social > a:hover 
 {
      background-image:url("../Images/inst-active.svg");
 }
 
-li#fb-social > a 
-{
-     background-image:url("../Images/fb-inactive.svg");
-}
-
-li#fb-social > a:hover
-{
-     background-image:url("../Images/fb-active.svg");
-}
 
 /*=======FOOTER============*/
 
@@ -852,7 +819,6 @@ li#fb-social > a:hover
 
 #callback-form-wrapper > h3, #callback-form-wrapper h4{
     color:white;
-
 }
 
 #callback-form-wrapper > h3{
@@ -1184,12 +1150,12 @@ div#lianizer-bot > input[type="submit"]:hover
     #site-navigation-menu > div.row ul#menu-items > div.container li {
         color: #a7a5a5;
         font-size: medium;
+        margin-left: 15px;
         font-size: 99%;
         height: 49px;
         width: 110px;
         display:block;
         margin:0;
-        margin-left:1%;
         text-align: center;
     }
 
@@ -1198,8 +1164,7 @@ div#lianizer-bot > input[type="submit"]:hover
         width: 100%;
     }
 
-        div#site-navigation-menu > div.row div#div-to-collapse
-       {
+        div#site-navigation-menu > div.row div#div-to-collapse {
             margin: 0;
             width: 100%;
             height: 49px;
@@ -1218,7 +1183,7 @@ div#lianizer-bot > input[type="submit"]:hover
         #quick-search-wrapper > div.container {
             margin: 0;
             padding: 0;
-             max-width: 1190px;
+            max-width: 1190px;
             min-width: 800px;
             width: 100%;
             height: 75px;
@@ -1227,8 +1192,8 @@ div#lianizer-bot > input[type="submit"]:hover
         }
 
             #quick-search-wrapper > div.container > form#quick-search-form {
-                /*max-width: 1190px;*/
-              /*  min-width: 800px;*/
+                max-width: 1190px;
+                min-width: 800px;
                 width: 100%;
                 margin: 0;
                 height:60px;
@@ -1281,318 +1246,9 @@ div#lianizer-bot > input[type="submit"]:hover
           left:400px;
      }
 
+
     /*=======CALENDAR==========*/
-
-/*=======CALLBACK==========*/
-    #callback-form-wrapper > h3{
-    font-size:medium;
-    margin-left:40%;
-}
-    #callback-form-wrapper h4{
-    margin-left:42%;
-    font-size:14px;
-}
-
-        #site-callback-wrapper,#site-callback-wrapper div#callback-rightbar,#callback-form-wrapper,#site-callback-wrapper div#callback-leftbar
-        {
-            height:210px;
-        }
-
-    #callback-form-wrapper .callback-lineanizer input{
-    height:20px;
-    width:130px;
-    font-size:small;
-}
-    
-    #callback-form-wrapper div.callback-lineanizer label
-{
-    height:20px;
-    width:200px;
-    text-align:right;
-    font-size:12px;
-}
-
-#callback-form-wrapper .callback-lineanizer
-{
-    width:340px;
-}
-
-#callback-form-wrapper div#lianizer-top
-{
-    margin-left:39%;
-}
-#callback-form-wrapper div#lianizer-mid{
-    margin-left:47%;
-}
-#callback-form-wrapper div#lianizer-bot{
-    margin-left:89%;
-}
-
- #site-callback-wrapper div#callback-rightbar{
-    background-size:60%;
-}
- /*=======CALLBACK==========*/
-
-
- /*===========MIDDLEBAR=========*/
- #site-middlebar-wrapper
-{
-    height:100%;
-    margin:0;
-    background-color:white;
-}
-
- div.middlebar-item{
-    height:180px;
-}
-
- div#middlebar-left,div#middlebar-right{
-      border-left: solid 2px;
-      border-right: solid 2px;
-}
-
- div#middlebar-central div.middlebar-content img
- {
-     width:70%;
-     height:50%;
- }
-
-  /*===========MIDDLEBAR=========*/
-
-  /*===========FOOTER==========*/
-  footer#site-footer .footer-item-wrapper>h4
-{
-   font-size:15px;
-    width:100%;
-}
-
-  footer#site-footer .footer-item-wrapper p
-{
-    color:#a7a5a5;
-}
-
-   ul#footer-socials li{
-       height:30px;
-       width:40px;
-       padding:0 5px;
-       margin:10px 5px;
-   }
-  ul#footer-socials li > a {
-        cursor: pointer;
-        background-size: 30px;
-        width:30px;
-        height:30px;
-     
-}
-  /*===========FOOTER==========*/
 
 }
 
 /*=====(min-width: 800px) and (max-width: 1200px)==========*/
-
-/*=====(min-width:  760px) and (max-width: 800px)==========*/
-@media screen and (min-width: 759px) and (max-width: 800px)
-{
-
-     #site-navigation-menu > div.row ul#menu-items > div.container li {
-        color: #a7a5a5;
-        font-size: 11px;
-        font-weight:300;
-        width: 100px;
-        text-align: center;
-    }
-
-         /*======QUICK SEARCH=========*/
-
-    #quick-search-wrapper {
-        height: 70px;
-        position: relative;
-        bottom: -360px;
-        border: 5px solid rgba(0,0,0, 0.5);
-    }
-
-        #quick-search-wrapper > div.container {
-            margin: 0;
-            padding: 0;
-           max-width: 800px;
-           min-width: 759px;
-            width: 100%;
-            height: 75px;
-            bottom: 350px;
-            float: left;
-        }
-
-            #quick-search-wrapper > div.container > form#quick-search-form {
-                max-width: 800px;
-               min-width: 759px;
-                width: 100%;
-                margin: 0;
-                height:60px;
-                padding: 0;
-                border: none;
-
-            }
-
-    #quick-search-input {
-        height: 60px;
-        width: 40%;
-        font-size: 17px;
-        margin: 0;
-        float: left;
-        bottom: 0px;
-    }
-
-    #quick-search-separator {
-        background-position: center;
-        background-size:20px;
-        width: 9%;
-    }
-
-    #quick-search-button-container {
-        width: 13%;
-
-    }
-
-    input#quick-search-button{  
-        font-size:17px;
-    }
-
-    #quick-search-calendar-icon{
-        width: 9%;
-    }
-
-    #quick-search-icon {
-         width: 9%;
-    }
-
-    #quick-search-date-from, #quick-search-date-to {
-        width: 10%;
-        font-size: 17px;
-    }
-    /*======QUICK SEARCH=========*/
-}
-/*=====(min-width:  760px) and (max-width: 800px)==========*/
-
-/*=====(min-width: 800px) and (max-width: 760px)==========*/
-
-@media screen and (min-width: 320px) and (max-width: 760px)
-{
-    #site-navigation-menu > div.row ul#menu-item
-    {
-        height:100%;
-        padding:5px 10px;
-    }
-     #site-navigation-menu > div.row ul#menu-items > div.container li{
-         width:100%;
-         font-size:20px;
-     }
-     div#site-slider-container{
-         position:relative;
-         top:65px;
-     }
-     
-/*======QUICK SEARCH=========*/
-
-#quick-search-wrapper
-{
-    height:65px;
-    position:relative;
-    bottom:0;
-    z-index:15;
-    width:100%;
-}
-
-#quick-search-wrapper > div.container
-{
-    width:100%;
-    padding:0;
-    border:none;
-}
-
-#quick-search-form
-{
-    width:100%;
-    padding:0;
-    margin:0px auto;
-    height:65px;
-    border:none;
-    border-bottom:5px solid black;
-}
-
-#quick-search-icon
-{
-    width:10%;
-
-}
-
-#quick-search-input
-{
-    width:90%;
-}
-
-.disp-false
-{
-    visibility:hidden;
-    opacity:0;
-    transition:0.5s;
-}
-.disp-true
-{
-    visibility:visible;
-    opacity:1;
-    transition:0.5s;
-}
-
-#quick-search-calendar-icon
-{
-    height:60px;
-    width:10%;
-    background-size:50px;
-    border-bottom:5px solid black;
-}
-
-form#quick-search-form #quick-search-button{
-     border-bottom:5px solid black;
-}
-
-#quick-search-date-from,#quick-search-date-to
-{
-    width:30%;     
-    border-bottom:5px solid black;
-}
-
-#quick-search-separator
-{
-    width:10%;
-    border-bottom:5px solid black;
-}
-
-#quick-search-button-container
-{
-    width:20%;
-    border-bottom:5px solid black;
-}
- /*=======QUICK SEARCH========*/
-
-      div#calendar-wrapper
-     {
-          left:30%;
-          top:60px;
-     }
-       div#calendar-wrapper >header{
-           height:70px;
-       }
-
-       div#calendar-wrapper #month
-       {
-           margin:0;
-           position:relative;
-           bottom:40px;
-       }
-       div#calendar-wrapper >header div
-       {
-           bottom:30px;
-           position:relative;
-       }
-
-}

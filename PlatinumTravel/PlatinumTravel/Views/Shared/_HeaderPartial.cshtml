@@ -5,14 +5,9 @@
                 <div id="site-navigation-left-block" class="col-md-2 col-sm-3">
                     <img id="site-logo" height="150" width="100"  src="~/Images/logo.svg"/>
                 </div>
-                <div id="site-navigation-central-block" class="col-md-5 hidden-sm">
-                    <div class="container">
-                        <span id="site-header-citata">«Идеал – чувствовать себя как дома в любом месте, вообще повсюду».</span>
-                        <br />
-                        <span id="citata-author">Джефф Дайер</span>
-                    </div>
+                <div id="site-navigation-central-block" class="hidden">
                 </div>
-                <div id="site-navigation-right-block" class="col-md-5 col-sm-9 hidden-xs">
+                <div id="site-navigation-right-block" class="col-md-10 col-sm-9 hidden-xs">
                     <div class="container">
                         <span>Ждем ваших звонков по номеру:</span>
                         <a href="tel:+7 (926) 035 88 16" class="phone">+7 (926) 035 88 16</a>
@@ -20,18 +15,28 @@
                 </div>
             </div>
             <div id="navigation-silver-string" class="row"></div>
-            <div id="site-navigation-menu" class="row">
-                <div class="container">
-                    <ul id="menu-items" class="nav navbar-nav">
-                        <div class="container">
-                            <li>Туры</li>
-                            <li>Речные туры</li>
-                            <li>Горящие туры</li>
-                            <li>Визы</li>
-                            <li>Страхование</li>
-                            <li>Контакты</li>
-                        </div>
-                    </ul>
+            <div id="site-navigation-menu" class="row navbar navbar-default navbar-static">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".js-navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="div-to-collapse" class="collapse navbar-collapse js-navbar">
+                        <ul id="menu-items" class="nav navbar-nav ">
+                            <div class="container">
+                                <li>Туры</li>
+                                <li>Речные туры</li>
+                                <li>Горящие туры</li>
+                                <li>Визы</li>
+                                <li>Паспорта</li>
+                                <li>Страхование</li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -40,16 +45,16 @@
                 <form id="quick-search-form">
                     <label id="quick-search-icon"></label>
                     <input id="quick-search-input" placeholder="Место назначения" type="text" />
-                    <label id="quick-search-calendar-icon"></label>
-                    <input id="quick-search-date-from" class="cal-trigger" type="text" placeholder="Прибытие" />
-                    <label id="quick-search-separator"></label>
-                    <input id="quick-search-date-to" class="cal-trigger" type="text" placeholder="Убытие" />
-                    <div id="quick-search-button-container">
+                    <label id="quick-search-calendar-icon" class="disp-trig disp-false"></label>
+                    <input id="quick-search-date-from" class="cal-trigger disp-trig disp-false" type="text" placeholder="Прибытие" />
+                    <label id="quick-search-separator" class="disp-trig disp-false"></label>
+                    <input id="quick-search-date-to" class="cal-trigger disp-trig disp-false" type="text" placeholder="Убытие" />
+                    <div id="quick-search-button-container" class="disp-trig disp-false">
                         <div id="quick-search-bar"></div>
                         <input id="quick-search-button" class="button" type="submit" value="Найти" />
                     </div>
                 </form>
-                <div id="calendar-wrapper" class="cal-inactive cal-trigger">
+                <div id="calendar-wrapper" class="cal-inactive cal-trigger  disp-trig">
                     @Html.Partial("~/Views/Shared/_CalendarPartial.cshtml")
                 </div>
             </div>

@@ -185,6 +185,7 @@
     <Content Include="Content\AdminStyle\bootstrap.full.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\calendar.css" />
+    <Content Include="Content\dsfsdf.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
