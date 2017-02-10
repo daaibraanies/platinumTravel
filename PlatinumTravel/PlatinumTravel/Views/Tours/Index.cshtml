@@ -5,39 +5,15 @@
 }
 
 <div id="site-body-wrapper" class="row" style="height:100%;">
-    <div class="container"style="height:100%;">
-        <h2>Горящие туры</h2>
-        <div id="hottours-wrapper" class="row" style="height:100%;">
-            <div class="hottour-container col-lg-4 col-md-4">
-                <img src="../Images/bg1.jpg" class="img-responsive" />
-                <div class="hottour-info col-lg-4 col-md-4">
-                    <span class="info">Заглавие</span>
-                    <span class="price">25 000</span>
-                </div>
-            </div>
-            <div class="hottour-container col-lg-4 col-md-4">
-                <img src="../Images/bg2.jpg" class="img-responsive" />
-                <div class="hottour-info col-lg-4 col-md-4">
-                    <span class="info">Заглавие</span>
-                    <span class="price">25 000</span>
-                </div>
-            </div>
-            <div class="hottour-container col-lg-4 col-md-4">
-                <img src="../Images/bg3.jpg" class="img-responsive" />
-                <div class="hottour-info col-lg-4 col-md-4">
-                    <span class="info">Заглавие</span>
-                    <span class="price">25 000</span>
-                </div>
-            </div>
-            </div>
-    </div>
+   
+    @Html.Partial("~/Views/Shared/_HotToursPartial.cshtml")
 
 
     <div id="site-callback-wrapper" class="row">
-        <div id="callback-leftbar" class="col-lg-2">
+        <div id="callback-leftbar" class="col-lg-2 col-md-3 hidden-sm hidden-xs">
            
         </div>
-        <div id="callback-rightbar" class="col-lg-10">
+        <div id="callback-rightbar" class="col-lg-10 col-md-9">
             <div id="callback-form-wrapper">
                 <h3>Устали подбирать тур сами?</h3>
                 <h4>оставьте свой номер и мы поможем вам </h4>
@@ -58,8 +34,53 @@
         </div>
     </div>
 
-    <div style="height:500px;" class="zaglushka">
-        
+    <div style="height:100%;" id="site-instag-wrappger" class="row">
+        <div class="container">
+            <h2>Мы в инстаграм: <a href="https://www.instagram.com/platinum_travel/">@@platinum_travel</a></h2>
+            <ul class="image-list-small">
+                <li>
+                    <a href="https://www.instagram.com/p/BOFbVZMBl51/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/s480x480/e35/15338313_1994333300794106_3176831895459594240_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href=""></a>Ваша подпись</h3>
+                        <p class="image-author">Matt Stone</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/p/BM4lnmujhyt/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/e35/c62.0.480.480/15043797_1254478844610408_8965082689472299008_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href="">Industrial</a></h3>
+                        <p class="image-author">Earnest Leming</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/p/BM1t0asDAb5/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.134.1080.1080/14726246_200196433721518_9080979049060237312_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href="">When in Rome..</a></h3>
+                        <p class="image-author">Edward Flint</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/p/BM1ZvX1jKYN/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c130.0.745.745/14550107_1796806223908876_5969957515843076096_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href="https://www.instagram.com/p/BM1ZvX1jKYN/?taken-by=platinum_travel">Mountain Top</a></h3>
+                        <p class="image-author">Rick Alpine</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/p/BL1w9pUhH7P/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14730682_832183910255959_7682312606836588544_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href="">Vienna Adventure</a></h3>
+                        <p class="image-author">Stacy River</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/p/BLtVTC8DURW/?taken-by=platinum_travel" style="background-image: url('https://scontent-fra3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14723219_1693965067597590_2120645191936245760_n.jpg');"></a>
+                    <div class="details">
+                        <h3><a href="">Magnificent beach</a></h3>
+                        <p class="image-author">Frank Stone</p>
+                    </div>
+                </li>
+            </ul>
     </div>
 </div>
 

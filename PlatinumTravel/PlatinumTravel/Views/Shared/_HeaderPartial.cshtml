@@ -2,17 +2,17 @@
     <div id="site-navigation-wrapper" class="row">
         <nav>
             <div id="site-navigation">
-                <div id="site-navigation-left-block" class="col-md-4">
+                <div id="site-navigation-left-block" class="col-md-2 col-sm-3">
                     <img id="site-logo" height="150" width="100"  src="~/Images/logo.svg"/>
                 </div>
-                <div id="site-navigation-central-block" class="col-md-4">
+                <div id="site-navigation-central-block" class="col-md-5 hidden-sm">
                     <div class="container">
                         <span id="site-header-citata">«Идеал – чувствовать себя как дома в любом месте, вообще повсюду».</span>
                         <br />
                         <span id="citata-author">Джефф Дайер</span>
                     </div>
                 </div>
-                <div id="site-navigation-right-block" class="col-md-4">
+                <div id="site-navigation-right-block" class="col-md-5 col-sm-9 hidden-xs">
                     <div class="container">
                         <span>Ждем ваших звонков по номеру:</span>
                         <a href="tel:+7 (926) 035 88 16" class="phone">+7 (926) 035 88 16</a>
@@ -41,15 +41,15 @@
                     <label id="quick-search-icon"></label>
                     <input id="quick-search-input" placeholder="Место назначения" type="text" />
                     <label id="quick-search-calendar-icon"></label>
-                    <input id="quick-search-date-from" type="text" placeholder="Прибытие" />
+                    <input id="quick-search-date-from" class="cal-trigger" type="text" placeholder="Прибытие" />
                     <label id="quick-search-separator"></label>
-                    <input id="quick-search-date-to" type="text" placeholder="Убытие" />
+                    <input id="quick-search-date-to" class="cal-trigger" type="text" placeholder="Убытие" />
                     <div id="quick-search-button-container">
                         <div id="quick-search-bar"></div>
                         <input id="quick-search-button" class="button" type="submit" value="Найти" />
                     </div>
                 </form>
-                <div id="calendar-wrapper" class="cal-inactive">
+                <div id="calendar-wrapper" class="cal-inactive cal-trigger">
                     @Html.Partial("~/Views/Shared/_CalendarPartial.cshtml")
                 </div>
             </div>

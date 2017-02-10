@@ -1,52 +1,52 @@
 ﻿<header id="calendar-header">
     <div id="back-month"></div>
-    <h1 id="month">Январь</h1>
+    <h1 id="month" step="0" cur-day="@DateTime.Now.ToString("dd")" cur-month="@(DateTime.Now.Month-1)" cur-year="@DateTime.Now.ToString("yyyy")"></h1>
     <div id="forward-month"></div>
 </header>
 
 <div id="calendar">
     <ul>
-        <li class="dayofweek" id="monday" href="#">ПН</li>
+        <li class="dayofweek" id="monday" href="#"><span>ПН</span></li>
         <li class="dayofweek" id="tuesday" href="#">ВТ</li>
         <li class="dayofweek" id="wednesday" href="#">СР</li>
         <li class="dayofweek" id="thursday" href="#">ЧТ</li>
         <li class="dayofweek" id="friday" href="#">ПТ</li>
         <li class="dayofweek" id="saturday" href="#">СБ</li>
         <li class="dayofweek" id="sunday" href="#">ВС</li>
-        <li class="block cal-date" id="blockone" href="#">1</li>
-        <li class="block cal-date" id="blocktwo" href="#">2</li>
-        <li class="block cal-date" id="blockthree" href="#">3</li>
-        <li class="block cal-date" id="blockfour" href="#">4</li>
-        <li class="block cal-date" id="blockfive" href="#">5</li>
-        <li class="weekend cal-date" id="blocksix" href="#">6</li>
-        <li class="weekend cal-date" id="blockseven" href="#">7</li>
-        <li class="block cal-date" id="blockeight" href="#">8</li>
-        <li class="block cal-date" id="blocknine" href="#">9</li>
-        <li class="block cal-date" id="blockten" href="#">10</li>
-        <li class="block cal-date" id="blockeleven" href="#">11</li>
-        <li class="block cal-date" id="blocktwelve" href="#">12</li>
-        <li class="weekend cal-date" id="blockthirteen" href="#">13</li>
-        <li class="weekend cal-date" id="blockfourteen" href="#">14</li>
-        <li class="block cal-date" id="blockfifteen" href="#">15</li>
-        <li class="block cal-date" id="blocksixteen" href="#">16</li>
-        <li class="block cal-date" id="blockseventeen" href="#">17</li>
-        <li class="block cal-date" id="blockeighteen" href="#">18</li>
-        <li class="block cal-date" id="blocknineteen" href="#">19</li>
-        <li class="weekend cal-date" id="blocktwenty" href="#">20</li>
-        <li class="weekend cal-date" id="blocktwentyone" href="#">21</li>
-        <li class="block cal-date" id="blocktwentytwo" href="#">22</li>
-        <li class="block cal-date" id="blocktwentythree" href="#">23</li>
-        <li class="block cal-date" id="blocktwentyfour" href="#">24</li>
-        <li class="block cal-date" id="blocktwentyfive" href="#">25</li>
-        <li class="block cal-date" id="blocktwentysix" href="#">26</li>
-        <li class="weekend cal-date" id="blocktwentyseven" href="#">27</li>
-        <li class="weekend cal-date" id="blocktwentyeight" href="#">28</li>
-        <li class="block cal-date" id="blocktwentynine" href="#">29</li>
-        <li class="block cal-date" id="blockthirty" href="#">30</li>
-        <li class="block cal-date" id="blockthirtyone" href="#">31</li>
-        <li class="block cal-date" id="blockthirtytwo" href="#">1</li>
-        <li class="block cal-date" id="blockthirtythree" href="#">2</li>
-        <li class="weekend cal-date" id="blockthirtyfour" href="#">3</li>
-        <li class="weekend cal-date" id="blockthirtyfive" href="#">4</li>
+        <li class="block c-d-0 cal-date" id="blockone" href="#"></li>
+        <li class="block  c-d-1 cal-date" id="blocktwo" href="#"></li>
+        <li class="block  c-d-2 cal-date" id="blockthree" href="#"></li>
+        <li class="block  c-d-3 cal-date" id="blockfour" href="#"></li>
+        <li class="block  c-d-4 cal-date" id="blockfive" href="#"></li>
+        <li class="block  c-d-5 cal-date" id="blocksix" href="#"></li>
+        <li class="block  c-d-6 cal-date" id="blockseven" href="#"></li>
+        <li class="block  c-d-7 cal-date" id="blockeight" href="#"></li>
+        <li class="block  c-d-8 cal-date" id="blocknine" href="#"></li>
+        <li class="block  c-d-9 cal-date" id="blockten" href="#"></li>
+        <li class="block  c-d-10 cal-date" id="blockeleven" href="#"></li>
+        <li class="block  c-d-11 cal-date" id="blocktwelve" href="#"></li>
+        <li class="block  c-d-12 cal-date" id="blockthirteen" href="#"></li>
+        <li class="block  c-d-13 cal-date" id="blockfourteen" href="#"></li>
+        <li class="block  c-d-14 cal-date" id="blockfifteen" href="#"></li>
+        <li class="block  c-d-15 cal-date" id="blocksixteen" href="#"></li>
+        <li class="block  c-d-16 cal-date" id="blockseventeen" href="#"></li>
+        <li class="block  c-d-17 cal-date" id="blockeighteen" href="#"></li>
+        <li class="block  c-d-18 cal-date" id="blocknineteen" href="#"></li>
+        <li class="block  c-d-19 cal-date" id="blocktwenty" href="#"> </li>
+        <li class="block  c-d-20 cal-date" id="blocktwentyone" href="#"></li>
+        <li class="block  c-d-21 cal-date" id="blocktwentytwo" href="#"></li>
+        <li class="block  c-d-22 cal-date" id="blocktwentythree" href="#"></li>
+        <li class="block  c-d-23 cal-date" id="blocktwentyfour" href="#"></li>
+        <li class="block  c-d-24 cal-date" id="blocktwentyfive" href="#"></li>
+        <li class="block  c-d-25 cal-date" id="blocktwentysix" href="#"></li>
+        <li class="block  c-d-26 cal-date" id="blocktwentyseven" href="#"></li>
+        <li class="block  c-d-27 cal-date" id="blocktwentyeight" href="#"></li>
+        <li class="block  c-d-28 cal-date" id="blocktwentynine" href="#"></li>
+        <li class="block  c-d-29 cal-date" id="blockthirty" href="#"></li>
+        <li class="block  c-d-30 cal-date" id="blockthirtyone" href="#"></li>
+        <li class="block  c-d-31 cal-date" id="blockthirtytwo" href="#"></li>
+        <li class="block  c-d-32 cal-date" id="blockthirtythree" href="#"></li>
+        <li class="block  c-d-33 cal-date" id="blockthirtyfour" href="#"></li>
+        <li class="block  c-d-34 cal-date" id="blockthirtyfour" href="#"></li>
     </ul>
 </div>

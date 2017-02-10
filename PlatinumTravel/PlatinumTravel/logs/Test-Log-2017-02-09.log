@@ -1,0 +1,11 @@
+[START] 2017-02-09 13:35:19.3311 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+[START] 2017-02-09 13:35:23.6940 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+[START] 2017-02-09 13:35:35.0702 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-09 13:35:39.2214 | INFO | PlatinumTravel.Controllers.ManageController | Запрос на изменение данных пользователя ид: 1. Кто:Admin
+[START] 2017-02-09 13:35:41.7319 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.
+[START] 2017-02-09 21:32:17.6614 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+[START] 2017-02-09 21:32:22.2092 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+[START] 2017-02-09 21:32:58.8387 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-09 21:33:20.6272 | INFO | PlatinumTravel.Controllers.ManageController | Попытка удаления слайда. Кто:Admin
+[START] 2017-02-09 21:33:31.8985 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-09 21:33:33.9095 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.

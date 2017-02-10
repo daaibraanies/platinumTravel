@@ -247,6 +247,7 @@
     <Content Include="Views\Tours\Index.cshtml" />
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
     <Content Include="Views\Shared\_CalendarPartial.cshtml" />
+    <Content Include="Views\Shared\_HotToursPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Files\Images\Slider\" />
