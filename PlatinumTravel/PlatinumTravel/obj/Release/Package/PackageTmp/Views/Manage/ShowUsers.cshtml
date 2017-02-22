@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PlatinumTravel.Models.Profile>
+
+@{
+    ViewBag.Title = "ShowUsers";
+}
+
+<h2>Пользователи</h2>
+<p>Пользователи допущенные к управлению контентом.</p>
+<hr/>
+<table id="user-list-table" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Имя пользователя</th>
+            <th>Пароль</th>
+            <th>Роль</th>
+            <th colspan="2">Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var profile in Model)
+    {
+        profile.Trimmed();
+        <tr>
+            <td>@profile.Id</td>
+            <td>@profile.UserName</td>
+            <td>@profile.Password</td>
+            <td>@profile.Role</td>
+            <td><a href="~/Manage/EditUserProfile/@profile.Id">Изменить</a></td>
+            <td><a href="~/Manage/DeleteUser/@profile.Id" onclick="return confirmUserDelete();">Удалить</a></td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+    <form action="~/Manage/AddUser">
+        <input type="submit" value="Добавить нового пользователя" class="btn btn-default" />
+    </form>
+
+

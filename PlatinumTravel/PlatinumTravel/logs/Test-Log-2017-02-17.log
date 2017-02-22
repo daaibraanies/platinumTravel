@@ -1,0 +1,13 @@
+[START] 2017-02-17 18:23:02.7660 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+[START] 2017-02-17 18:23:06.2849 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main
+[START] 2017-02-17 18:23:12.6579 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-17 18:23:16.2359 | INFO | PlatinumTravel.Controllers.ManageController | Запрос на изменение данных пользователя ид: 1. Кто:Admin
+[START] 2017-02-17 18:23:25.1277 | INFO | PlatinumTravel.Controllers.ManageController | Попытка удаления слайда. Кто:Admin
+[START] 2017-02-17 18:29:19.4171 | INFO | PlatinumTravel.Models.Slider | Слайд загружен.
+[START] 2017-02-17 18:29:43.9191 | FATAL | PlatinumTravel.Models.Slider | При загрузке изобр. слайдера возникла ошибка. An error occurred while updating the entries. See the inner exception for details.
+[START] 2017-02-17 18:30:00.7962 | INFO | PlatinumTravel.Models.Slider | Слайд загружен.
+[START] 2017-02-17 18:30:10.6406 | FATAL | PlatinumTravel.Models.Slider | При загрузке изобр. слайдера возникла ошибка. An error occurred while updating the entries. See the inner exception for details.
+[START] 2017-02-17 18:30:23.5710 | INFO | PlatinumTravel.Models.Slider | Слайд загружен.
+[START] 2017-02-17 18:30:42.3528 | INFO | PlatinumTravel.Models.Slider | Слайд загружен.
+[START] 2017-02-17 18:30:46.7661 | INFO | PlatinumTravel.Controllers.ManageController | Запрос данных о пользователях. 
+[START] 2017-02-17 18:30:50.4862 | INFO | PlatinumTravel.Controllers.AccountController | Пользователь Admin покинул панель одминистирования.

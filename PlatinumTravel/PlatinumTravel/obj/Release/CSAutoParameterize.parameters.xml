@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="UserConnection-Web.config Connection String" description="UserConnection Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=False;          MultipleActiveResultSets=False;          User ID=User;          Password=user;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AdminConnection-Web.config Connection String" description="AdminConnection Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=False;          MultipleActiveResultSets=False;          User ID=Admin_pl;          Password=admin;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdminConnection']/@connectionString" />
+  </parameter>
+  <parameter name="root-Web.config Connection String" description="root Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=True;          MultipleActiveResultSets=False;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='root']/@connectionString" />
+  </parameter>
+</parameters>

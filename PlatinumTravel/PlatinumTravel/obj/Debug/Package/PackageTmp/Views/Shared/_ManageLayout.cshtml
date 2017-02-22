@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title – Администрирование</title>
+    @Styles.Render("~/Content/AdminPageCss")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+       <div class="row">
+           <div id="left-bar-wrapper" class="col-lg-2 left navigation-wrapper">
+                   <nav id="spy">
+                       <ul class="sidebar-nav nav">
+                           <li class="sidebar-brand active">
+                               <a href="~/Manage"><span class="fa fa-home solo">Меню</span></a>
+                           </li>
+                           <li class="">
+                               <a href="~/Manage/ShowUsers" data-scroll="" class="">
+                                   <span class="fa fa-anchor solo">Пользователи</span>
+                               </a>
+                           </li>
+                           <li class="">
+                               <a href="~/Manage/Slider" data-scroll="" class="">
+                                   <span class="fa fa-anchor solo">Слайдер</span>
+                               </a>
+                           </li>
+                           <li class="">
+                               <a href="#anch3" data-scroll="" class="">
+                                   <span class="fa fa-anchor solo">Anchor 3</span>
+                               </a>
+                           </li>
+                           <li class="">
+                               <a href="~/Account/Logout" data-scroll="" class="">
+                                   <span class="fa fa-anchor solo">Выход</span>
+                               </a>
+                           </li>
+                       </ul>
+                   </nav>
+           </div>
+           <div id="righ-bar-wrapper" class="col-lg-10">
+               @RenderBody()
+           </div>
+       </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/AdminScripts");
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@model PlatinumTravel.Models.logReport
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Панель администрирования</h2>
+<p>Главная страница</p>
+<hr/>
+<div id="log-report-wrapper" class="col-md-7">
+    <fieldset>
+        <legend>Последние события</legend>
+            <!--<textarea readonly="readonly" disabled="disabled" rows="16" cols="100" id="log-report-container"></textarea>-->
+            <div id="log-report-container">
+                @foreach(string str in Model.ReadTextByStrings().Reverse())
+                {
+                    string level = "";
+                    if(str.Contains("FATAL")){ level = "log-string-fatal"; }
+                    else if (str.Contains("WARN")){ level = "log-string-warn"; }
+                     
+                    <div class="log-string-wrapper @level">
+                        @str
+                   </div>
+                }
+            </div>
+    </fieldset>
+</div>

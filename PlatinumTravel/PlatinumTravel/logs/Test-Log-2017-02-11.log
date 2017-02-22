@@ -1,0 +1,4 @@
+[START] 2017-02-11 19:10:45.4038 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,adin
+[START] 2017-02-11 19:10:53.7325 | INFO | PlatinumTravel.Controllers.AccountController | В доступе отказано. Неверные данные. main adin
+[START] 2017-02-11 19:10:57.9845 | INFO | PlatinumTravel.Controllers.AccountController | Попытка входа. Данные при входе: main,admin
+[START] 2017-02-11 19:10:59.4586 | INFO | PlatinumTravel.Controllers.AccountController | Доступ на правах администратора предоставлен main

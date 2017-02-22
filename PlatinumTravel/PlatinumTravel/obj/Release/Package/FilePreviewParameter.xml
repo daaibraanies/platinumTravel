@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="pttest-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AdminConnection-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=False;          MultipleActiveResultSets=False;          User ID=Admin_pl;          Password=admin;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdminConnection']/@connectionString" />
+  </parameter>
+  <parameter name="root-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=True;          MultipleActiveResultSets=False;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='root']/@connectionString" />
+  </parameter>
+  <parameter name="UserConnection-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;          Initial Catalog=platinumDB;          Integrated Security=False;          MultipleActiveResultSets=False;          User ID=User;          Password=user;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserConnection']/@connectionString" />
+  </parameter>
+</parameters>

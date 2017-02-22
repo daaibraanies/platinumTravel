@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="pttest-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AdminConnection-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=False;&#xD;&#xA;         MultipleActiveResultSets=False;&#xD;&#xA;         User ID=Admin_pl;&#xD;&#xA;         Password=admin;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdminConnection']/@connectionString" />
+  </parameter>
+  <parameter name="root-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=True;&#xD;&#xA;         MultipleActiveResultSets=False;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='root']/@connectionString" />
+  </parameter>
+  <parameter name="UserConnection-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=False;&#xD;&#xA;         MultipleActiveResultSets=False;&#xD;&#xA;         User ID=User;&#xD;&#xA;         Password=user;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserConnection']/@connectionString" />
+  </parameter>
+</parameters>

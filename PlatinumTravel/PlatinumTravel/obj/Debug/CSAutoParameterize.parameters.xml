@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="UserConnection-Web.config Connection String" description="UserConnection Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=False;&#xD;&#xA;         MultipleActiveResultSets=False;&#xD;&#xA;         User ID=User;&#xD;&#xA;         Password=user;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AdminConnection-Web.config Connection String" description="AdminConnection Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=False;&#xD;&#xA;         MultipleActiveResultSets=False;&#xD;&#xA;         User ID=Admin_pl;&#xD;&#xA;         Password=admin;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AdminConnection']/@connectionString" />
+  </parameter>
+  <parameter name="root-Web.config Connection String" description="root Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=(localdb)\MSSQLLocalDB;&#xD;&#xA;         Initial Catalog=platinumDB;&#xD;&#xA;         Integrated Security=True;&#xD;&#xA;         MultipleActiveResultSets=False;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Work\ Dir\\Git\\platinumTravel\\PlatinumTravel\\PlatinumTravel\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='root']/@connectionString" />
+  </parameter>
+</parameters>
