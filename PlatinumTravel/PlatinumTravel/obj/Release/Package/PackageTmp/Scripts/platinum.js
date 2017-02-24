@@ -168,6 +168,10 @@
         }
     }
 
-
-
+    $('button#header-order-button').click(function () {
+        $('div#site-order-wrapper').removeClass('hidden');
+    });
+    $('button#header-order-close').click(function () {
+        $('div#site-order-wrapper').addClass('hidden');
+    });
 });

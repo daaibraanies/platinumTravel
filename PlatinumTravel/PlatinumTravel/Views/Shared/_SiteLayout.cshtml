@@ -16,9 +16,9 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
+    @Html.Partial("~/Views/Shared/_OrderPartial.cshtml")
     <div id="main-section">
        @Html.Partial("~/Views/Shared/_HeaderPartial.cshtml")
-
         <section>
             @RenderBody()
         </section>

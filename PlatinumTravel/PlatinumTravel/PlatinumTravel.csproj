@@ -257,6 +257,7 @@
     <Content Include="Views\Travel\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\About\Contacts.cshtml" />
+    <Content Include="Views\Shared\_OrderPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Files\Images\Slider\" />

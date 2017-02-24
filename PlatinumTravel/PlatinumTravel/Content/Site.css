@@ -1737,7 +1737,8 @@ div#tel-wrapper > div#tel-container div.tel> a.phone:hover
     }
      #site-navigation-menu > div.row ul#menu-items > div.row li{
          width:100%;
-         font-size:17px;
+         height:40px;
+         font-size:15px;
      }
 
      div#div-to-collapse
